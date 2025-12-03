@@ -1,0 +1,33 @@
+{
+  "name": "foxyjumpscare",
+  "displayName": "FoxyJumpscare",
+  "description": "1/10000 Chance for Withered Foxy Jumpscare Every Second - inspired by the terraria mod by  ymy with the same name : https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.106.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "foxyjumpscare.helloWorld",
+      "title": "Hello World"
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.106.1",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.1",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
