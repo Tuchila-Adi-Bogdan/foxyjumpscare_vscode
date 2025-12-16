@@ -6,7 +6,7 @@ from PySide6.QtGui import QPainter, QPixmap
 from PySide6.QtCore import QTimer, QRect, Qt, QUrl
 from PySide6.QtMultimedia import QMediaPlayer, QAudioOutput
 
-class AtlasPlayer(QWidget):
+class JumpscarePlayer(QWidget):
     def __init__(self, xml_path, png_path, audio_path):
         super().__init__()
 
@@ -113,5 +113,5 @@ if __name__ == "__main__":
     PNG_FILE = "foxy.png" 
     AUDIO_FILE = "jumpscare.mp3"
     app = QApplication(sys.argv)
-    player = AtlasPlayer(XML_FILE, PNG_FILE, AUDIO_FILE)
+    player = JumpscarePlayer(XML_FILE, PNG_FILE, AUDIO_FILE)
     sys.exit(app.exec())
