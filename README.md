@@ -1,7 +1,7 @@
 # 1 in 10000 chance of Withered Foxy Jumpscare Every Secound
 
-[![Discord](https://img.shields.io/badge/akaduy69420-%235865F2.svg?&logo=discord&logoColor=white)](https://discord.com/users/277769804809502721)
-[![Github](https://img.shields.io/badge/lilyud420-black?style=flat&logo=github&logoColor=white)](https://github.com/Tuchila-Adi-Bogdan)
+[![Discord](https://img.shields.io/badge/WeirdStuff01-white?style=flat-square&logo=discord)](https://discord.com/users/277769804809502721)
+[![Github](https://img.shields.io/badge/TuchilaAdiBogdan-black?style=flat-square&logo=github)](https://github.com/Tuchila-Adi-Bogdan)
 
 ## Overview:
 
@@ -28,7 +28,7 @@ Initial release
 ## Note:
 
 Inspired by "1/10000 Chance for Withered Foxy Jumpscare Every Second" by **YMY** from TmodLoader.
-Used assets from <a href= "https://github.com/lilyud420/1_10000_jumpscare"> this repository </a>, by <a href= "https://github.com/lilyud420"> lilyud420 </a>.
+Used assets from <a href= "https://github.com/lilyud420/1_10000_jumpscare">this repository</a>, by <a href= "https://github.com/lilyud420">lilyud420</a>.
 
 You are a human being, capable of making your own judgements and decisions. Use this at your own risk.
  
