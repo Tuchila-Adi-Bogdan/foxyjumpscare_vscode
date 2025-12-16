@@ -2,7 +2,9 @@
   "name": "foxyjumpscare",
   "displayName": "FoxyJumpscare",
   "description": "1/10000 Chance for Withered Foxy Jumpscare Every Second - inspired by the terraria mod by  ymy with the same name : https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642",
-  "version": "0.0.1",
+  "version": "1.0.3",
+  "publisher": "AdiBogdanT",
+  "icon": "media/icon.png",
   "engines": {
     "vscode": "^1.106.1"
   },
@@ -35,6 +37,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Tuchila-Adi-Bogdan/foxyjumpscare_vscode.git"
-  },
-  "publisher": "AdiBogdanT"
+  }
+  
 }
