@@ -26,8 +26,7 @@ class AtlasPlayer(QWidget):
         self.current_frame_index = 0
         self.total_frames = len(self.frames)
         
-        # 3. SETUP AUDIO (The Fix)
-        # QMediaPlayer is required for MP3s. QSoundEffect usually only plays WAVs.
+        # 3. SETUP AUDIO
         self.media_player = QMediaPlayer()
         self.audio_output = QAudioOutput()
         
@@ -110,16 +109,9 @@ class AtlasPlayer(QWidget):
         painter.end()
 
 if __name__ == "__main__":
-    # --- CONFIGURATION ---
-    # Ensure these filenames match exactly what is in your media folder
     XML_FILE = "foxy.xml" 
     PNG_FILE = "foxy.png" 
-    AUDIO_FILE = "jumpscare.mp3"  # <--- UPDATED
-
+    AUDIO_FILE = "jumpscare.mp3"
     app = QApplication(sys.argv)
-    
-    # We assume the script is running inside the 'media' folder (cwd)
-    # so we just pass the filenames directly.
     player = AtlasPlayer(XML_FILE, PNG_FILE, AUDIO_FILE)
-    
     sys.exit(app.exec())
