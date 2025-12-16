@@ -8,8 +8,7 @@
 A 1/10000 Chance for Withered Foxy Jumpscare Every Second vscode extension inspired by <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642"> the terraria mod by **YMY** with the same name </a>
 
 ## Screenshot:
-
-<img src="https://github.com/Tuchila-Adi-Bogdan/foxyjumpscare_vscode/raw/master/media/preview.png" width="500">
+![Foxy Jumpscare Preview](media/preview.png)
 
 ## Requirements : PySide6
 
