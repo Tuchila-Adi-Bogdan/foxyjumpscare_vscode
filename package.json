@@ -31,6 +31,10 @@
     "eslint": "^9.39.1",
     "@vscode/test-cli": "^0.0.12",
     "@vscode/test-electron": "^2.5.2"
+  },
+  "repository": {
+    "url": "https://github.com/Tuchila-Adi-Bogdan/foxyjumpscare_vscode",
+    "type": "git"
   }
   
 }

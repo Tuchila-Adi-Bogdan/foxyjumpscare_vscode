@@ -11,10 +11,15 @@ A 1/10000 Chance for Withered Foxy Jumpscare Every Second vscode extension inspi
 
 <img src ="https://github.com/Tuchila-Adi-Bogdan/foxyjumpscare_vscode/blob/master/media/preview.png">
 
-## Requirements
+## Requirements : PySide6
 
-python
-PySide6
+1.  Install [Python](https://www.python.org/downloads/).
+2.  Open your terminal/command prompt and run:
+    ```bash
+    pip install PySide6
+    ```
+
+> **Note:** If you do not install these, the jumpscare will fail silently.
 
 ## Known Issues
 
@@ -32,5 +37,4 @@ Used assets from <a href= "https://github.com/lilyud420/1_10000_jumpscare">this 
 
 You are a human being, capable of making your own judgements and decisions. Use this at your own risk.
  
-
 **Enjoy!**
