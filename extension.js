@@ -2,30 +2,38 @@ const vscode = require('vscode');
 const { spawn } = require('child_process');
 const path = require('path');
 
-const CHANCE_DENOMINATOR = 10000; 
-const CHECK_INTERVAL_MS = 1000;
+// CONFIGURATION
+const CHANCE_DENOMINATOR = 10000; // 1 in 10000 chance
+const CHECK_INTERVAL_MS = 1000; // Check every 1 second
 
 let intervalId;
 
+/**
+ * @param {vscode.ExtensionContext} context
+ */
 function activate(context) {
     console.log('Five Nights...');
 
     const triggerJumpscare = () => {
         const scriptPath = path.join(context.extensionPath, '__init__.py');
-        const videoPath = path.join(context.extensionPath, 'media', 'fnaf-2-foxy-jumpscare-video.mp4');
         
-        // Spawn Python
-        const pyProcess = spawn('python', [scriptPath, videoPath]);
+        const pyProcess = spawn('python', [scriptPath], {
+            cwd: path.join(context.extensionPath, 'media') 
+        });
 
         pyProcess.stderr.on('data', (data) => {
             console.error(`Python Error: ${data}`);
+        });
+
+        pyProcess.on('error', (err) => {
+             console.error(`Spawn Error: ${err}`);
+             vscode.window.showErrorMessage("Failed to launch Jumpscare. Is Python installed?");
         });
     };
 
     // THE TIMER
     intervalId = setInterval(() => {
         const roll = Math.floor(Math.random() * CHANCE_DENOMINATOR) + 1;
-        
         if (roll === 1) {
             triggerJumpscare();
         }
@@ -33,7 +41,12 @@ function activate(context) {
 }
 
 function deactivate() {
-    if (intervalId) clearInterval(intervalId);
+    if (intervalId) {
+        clearInterval(intervalId);
+    }
 }
 
-module.exports = { activate, deactivate }
+module.exports = {
+    activate,
+    deactivate
+}
