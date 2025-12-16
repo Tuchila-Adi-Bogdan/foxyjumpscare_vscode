@@ -33,8 +33,8 @@
     "@vscode/test-electron": "^2.5.2"
   },
   "repository": {
-    "url": "https://github.com/Tuchila-Adi-Bogdan/foxyjumpscare_vscode",
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/Tuchila-Adi-Bogdan/foxyjumpscare_vscode.git"
   }
   
 }
