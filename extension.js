@@ -15,7 +15,7 @@ function activate(context) {
     console.log('Five Nights...');
 
     const triggerJumpscare = () => {
-        const scriptPath = path.join(context.extensionPath, '__init__.py');
+        const scriptPath = path.join(context.extensionPath, 'player.py');
         
         const pyProcess = spawn('python', [scriptPath], {
             cwd: path.join(context.extensionPath, 'media') 
