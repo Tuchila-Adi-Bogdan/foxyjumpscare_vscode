@@ -1,4 +1,4 @@
-# 1 in 10000 chance of Withered Foxy Jumpscare Every Secound
+# 1 in 10000 chance of Withered Foxy Jumpscare Every Second
 
 [![Discord](https://img.shields.io/badge/WeirdStuff01-white?style=plastic&logo=discord)](https://discord.com/users/277769804809502721)
 [![Github](https://img.shields.io/badge/TuchilaAdiBogdan-black?style=plastic&logo=github)](https://github.com/Tuchila-Adi-Bogdan)
