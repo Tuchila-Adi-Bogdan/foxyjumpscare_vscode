@@ -28,7 +28,9 @@ scary
 ### 1.0.0
 
 Initial release
+### 1.0.3
 
+Fix issues with readme, marketplace extension page, and added an icon.
 ## Note:
 
 Inspired by "1/10000 Chance for Withered Foxy Jumpscare Every Second" by **YMY** from TmodLoader.
