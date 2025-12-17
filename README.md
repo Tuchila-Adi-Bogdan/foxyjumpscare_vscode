@@ -12,13 +12,13 @@ A 1/10000 Chance for Withered Foxy Jumpscare Every Second vscode extension inspi
 
 ## Requirements 
 
-    [Python](https://www.python.org/downloads/).
+[Python](https://www.python.org/downloads/).
 
 ## Known Issues
 
-    1.Scary
-    2.Can't change frenquency (planned)
-    3.Can't change volume (planned)
+1.Scary
+2.Can't change frenquency (planned)
+3.Can't change volume (planned)
 
 ## Release Notes
 ### 1.0.0
