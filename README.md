@@ -30,7 +30,8 @@ Fix issues with readme, marketplace extension page, and added an icon.
 
 ### 2.0.0
 
-Removed PySide6 dependency.
+Removed PySide6 dependency. 
+Reduce size by ~40%.
 
 ## Note:
 
