@@ -16,9 +16,11 @@ function activate(context) {
 
     const triggerJumpscare = () => {
         const scriptPath = path.join(context.extensionPath, 'player.py');
-        
-        const pyProcess = spawn('python', [scriptPath], {
-            cwd: path.join(context.extensionPath, 'media') 
+        const framesDir = path.join(context.extensionPath, 'media', 'frames');
+        const audioPath = path.join(context.extensionPath, 'media', 'jumpscare.wav');
+
+        const pyProcess = spawn('python', [scriptPath, framesDir, audioPath], {
+            cwd: path.join(context.extensionPath, 'media')
         });
 
         pyProcess.stderr.on('data', (data) => {
