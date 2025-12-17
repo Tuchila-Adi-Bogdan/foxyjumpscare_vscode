@@ -5,20 +5,22 @@
 
 ## Overview:
 
-A 1/10000 Chance for Withered Foxy Jumpscare Every Second vscode extension inspired by <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642"> the terraria mod by **YMY** with the same name </a>
+A 1/10000 Chance for Withered Foxy Jumpscare Every Second vscode extension inspired by <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642"> the terraria mod by **YMY** with the same name </a>.
 
 ## Screenshot:
 ![Foxy Jumpscare Preview](media/preview.png)
 
 ## Requirements 
 
-[Python](https://www.python.org/downloads/).
+[Python](https://www.python.org/downloads/)
 
 ## Known Issues
 
-1.Scary
-2.Can't change frenquency (planned)
-3.Can't change volume (planned)
+<ul>
+  <li>Scary</li>
+  <li>Can't change frenquency (planned)</li>
+  <li>Can't change volume (planned)</li>
+</ul> 
 
 ## Release Notes
 ### 1.0.0
@@ -26,7 +28,7 @@ A 1/10000 Chance for Withered Foxy Jumpscare Every Second vscode extension inspi
 Initial release
 ### 1.0.3
 
-Fix issues with readme, marketplace extension page, and added an icon.
+Fix issues with readme, package.json, marketplace extension page, and added an icon.
 
 ### 2.0.0
 
