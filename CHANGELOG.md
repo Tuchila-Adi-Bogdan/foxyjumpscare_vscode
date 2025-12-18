@@ -21,6 +21,6 @@ Reduce size by ~40%.
 
 The jumpscare will no longer trigger if the vscode tab is out of focus.
 
-### [2.0.1-fix]
+### [2.0.2]
 
 Emergency hotfix (my bad). 
