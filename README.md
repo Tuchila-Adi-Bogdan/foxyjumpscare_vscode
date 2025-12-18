@@ -12,7 +12,7 @@ A 1/10000 Chance for Withered Foxy Jumpscare Every Second vscode extension inspi
 
 ## Requirements 
 
-[Python](https://www.python.org/downloads/)
+<a href="https://www.python.org/downloads/">Python</a>
 
 ## Known Issues
 
