@@ -3,11 +3,10 @@ const { spawn } = require('child_process');
 const path = require('path');
 
 // CONFIGURATION
-const CHANCE_DENOMINATOR = 10000; // 1 in 10000 chance
+const CHANCE_DENOMINATOR = 10; // 1 in 10000 chance
 const CHECK_INTERVAL_MS = 1000; // Check every 1 second
 
 let intervalId;
-
 /**
  * @param {vscode.ExtensionContext} context
  */
@@ -35,6 +34,9 @@ function activate(context) {
 
     // THE TIMER
     intervalId = setInterval(() => {
+        if (!vscode.window.state.focused) {
+            return; 
+        }
         const roll = Math.floor(Math.random() * CHANCE_DENOMINATOR) + 1;
         if (roll === 1) {
             triggerJumpscare();

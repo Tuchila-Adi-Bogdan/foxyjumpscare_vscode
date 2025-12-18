@@ -35,6 +35,10 @@ Fix issues with readme, package.json, marketplace extension page, and added an i
 Removed PySide6 dependency. 
 Reduce size by ~40%.
 
+### 2.0.1
+
+The jumpscare will no longer trigger if the vscode tab is out of focus.
+
 ## Note:
 
 Inspired by "1/10000 Chance for Withered Foxy Jumpscare Every Second" by **YMY** from TmodLoader.
