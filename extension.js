@@ -3,7 +3,7 @@ const { spawn } = require('child_process');
 const path = require('path');
 
 // CONFIGURATION
-const CHANCE_DENOMINATOR = 10; // 1 in 10000 chance
+const CHANCE_DENOMINATOR = 10000; // 1 in 10000 chance
 const CHECK_INTERVAL_MS = 1000; // Check every 1 second
 
 let intervalId;
