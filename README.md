@@ -42,6 +42,10 @@ The jumpscare will no longer trigger if the vscode tab is out of focus.
 
 Emergency hotfix (my bad)
 
+### 2.1
+
+You can now trigger the jumpscare by vscode commad (triggerJumpscareNow)
+
 ## Note:
 
 Inspired by "1/10000 Chance for Withered Foxy Jumpscare Every Second" by **YMY** from TmodLoader.
