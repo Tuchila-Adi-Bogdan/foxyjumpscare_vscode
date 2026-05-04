@@ -5,7 +5,6 @@ import glob
 
 # Audio handling using ONLY Standard Library
 # 'winsound' is built-in on Windows. 
-# For Mac/Linux, we can use subprocess to call system audio players.
 if sys.platform == "win32":
     import winsound
 
@@ -25,23 +24,23 @@ class Player:
     def __init__(self, frames_folder, audio_path):
         self.root = tk.Tk()
 
-        # 1. SETUP WINDOW (Frameless & Topmost)
+        # SETUP WINDOW (Frameless & Topmost)
         self.root.overrideredirect(True)
         self.root.wm_attributes("-topmost", True)
         self.root.wm_attributes("-toolwindow", True) # Hides from taskbar
 
-        # 2. SETUP TRANSPARENCY
+        # SETUP TRANSPARENCY
         transparent_color = "#00ff00" 
         self.root.config(bg=transparent_color)
         if sys.platform == "win32":
             self.root.wm_attributes("-transparentcolor", transparent_color)
 
-        # 3. FULLSCREEN SETUP
+        # FULLSCREEN SETUP
         screen_width = self.root.winfo_screenwidth()
         screen_height = self.root.winfo_screenheight()
         self.root.geometry(f"{screen_width}x{screen_height}+0+0")
 
-        # 4. LOAD IMAGES
+        # LOAD IMAGES
         # Get all png files from the folder and sort them
         search_path = os.path.join(frames_folder, "*.png")
         files = sorted(glob.glob(search_path))
@@ -58,11 +57,11 @@ class Player:
         self.total_frames = len(self.frames)
         self.current_frame = 0
 
-        # 5. UI SETUP
+        # UI SETUP
         self.label = tk.Label(self.root, bg=transparent_color, borderwidth=0)
         self.label.pack(expand=True)
 
-        # 6. START audio
+        # START audio
         play_audio(audio_path)
         
         # Start animation

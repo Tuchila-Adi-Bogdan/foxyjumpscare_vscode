@@ -6,12 +6,14 @@ const path = require('path');
 const CHANCE_DENOMINATOR = 10000; // 1 in 10000 chance
 const CHECK_INTERVAL_MS = 1000; // Check every 1 second
 
+/** @type {NodeJS.Timeout} */
 let intervalId;
+
 /**
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-    console.log('Five Nights...');
+    console.log('Extension Started');
 
     const triggerJumpscare = () => {
         const scriptPath = path.join(context.extensionPath, 'player.py');
@@ -32,6 +34,11 @@ function activate(context) {
         });
     };
 
+    let disposable = vscode.commands.registerCommand('extension.triggerJumpscareNow', () => {
+        triggerJumpscare();
+    });
+    context.subscriptions.push(disposable);
+
     // THE TIMER
     intervalId = setInterval(() => {
         if (!vscode.window.state.focused) {
@@ -42,6 +49,8 @@ function activate(context) {
             triggerJumpscare();
         }
     }, CHECK_INTERVAL_MS);
+
+
 }
 
 function deactivate() {

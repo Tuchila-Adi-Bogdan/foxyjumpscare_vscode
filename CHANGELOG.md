@@ -23,4 +23,8 @@ The jumpscare will no longer trigger if the vscode tab is out of focus.
 
 ### [2.0.2]
 
-Emergency hotfix (my bad). 
+Emergency hotfix. 
+
+### [2.1.0]
+
+You can now trigger the jumpscare with a command (Ctrl+Shift+P, triggerJumpscareNow)
